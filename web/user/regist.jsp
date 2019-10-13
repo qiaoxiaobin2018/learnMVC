@@ -36,6 +36,7 @@
         <img id="image1" src="<c:url value="/verifycodeServlet"/>" border="2"/>
         <a href="javascript:_change()">换一张</a><font color="#ff7f50">* ${errors.verifycode}</font><br/>
     <input type="submit" value="注册"/>
+    
 </form>
 </body>
 </html>
