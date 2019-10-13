@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="exampleForLoginAndRegister:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/exampleForLoginAndRegister_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="exampleForLoginAndRegister/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="exampleForLoginAndRegister" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/jar file/myTools.jar" />
+          <element id="file-copy" path="D:/jar file/jaxen-1.1-beta-6.jar" />
+          <element id="file-copy" path="D:/jar file/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="D:/jar file/commons-logging-1.2.jar" />
+          <element id="file-copy" path="D:/jar file/commons-beanutils-1.9.3.jar" />
+          <element id="file-copy" path="D:/jar file/ZIP/jakarta-taglibs-standard-1.1.2/lib/standard.jar" />
+          <element id="file-copy" path="D:/jar file/ZIP/jakarta-taglibs-standard-1.1.2/lib/jstl.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar/CommonUtils工具类的jar/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar/CommonUtils工具类的jar/commons-beanutils-1.8.3.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar/CommonUtils工具类的jar/itcast-tools-1.4.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/itcast-tools-1.4.jar" />
+          <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/commons-beanutils-1.8.3.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
