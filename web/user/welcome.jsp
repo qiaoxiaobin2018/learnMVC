@@ -1,4 +1,4 @@
-<%--
+<%@ page import="cn.itcast.user.domain.User" %><%--
   Created by IntelliJ IDEA.
   User: JOE
   Date: 2019/10/13
@@ -18,5 +18,15 @@
 </head>
 <body>
 <h3>Welcome</h3>
+<%--判断是否登录--%>
+<c:choose>
+    <c:when test="${empty sessionScope.sessionUser }">
+        <c:redirect url="login.jsp"/>
+    </c:when>
+    <c:otherwise>
+        <font color="#ff1493">欢迎，${sessionScope.sessionUser.username}。</font>
+        <a href="<c:url value="/logoutServlet"/>">退出</a>
+    </c:otherwise>
+</c:choose>
 </body>
 </html>

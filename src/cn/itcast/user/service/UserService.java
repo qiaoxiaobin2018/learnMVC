@@ -23,4 +23,28 @@ public class UserService {
         }
         userDao.addUser(user);
     }
+    /**
+     * 登录功能
+     * */
+    public User login(User form) throws UserException{
+        /*
+        * 1.使用form 中的username进行查询，得到User user;
+        * */
+        User user = userDao.findByUserName(form.getUsername());
+        /**
+         * 2.如果user为null，说明用户不存在，抛出异常（用户不存在）
+         */
+        if(user == null) throw new UserException("用户名不存在！");
+        /*
+        * 3.比较user的password和form的password，如果不同，抛出异常（密码错误）
+        * */
+        if(!user.getPassword().equals(form.getPassword())){
+            throw  new UserException("密码错误！");
+        }
+        /*
+        * 4.返回数据库中查询出来的user，而不是form，因为form中只有用户名和密码，而user中有所有的用户信息
+        * */
+        return user;
+
+    }
 }

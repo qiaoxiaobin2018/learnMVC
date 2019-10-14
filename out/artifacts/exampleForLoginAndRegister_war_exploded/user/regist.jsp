@@ -28,7 +28,6 @@
 </head>
 <body>
 <h3>Regist</h3>
-<p style="color: darkorange;font-size: medium">${msg}</p>
 <form action="<c:url value="/registerServlet"/>" method="post">
     <%--requestScope.user.username--%>
     账 号：<input type="text" name="username" value="${param.username}"/><font color="#ff7f50">* ${errors.username}</font> <br/>
@@ -37,6 +36,7 @@
         <img id="image1" src="<c:url value="/verifycodeServlet"/>" border="2"/>
         <a href="javascript:_change()">换一张</a><font color="#ff7f50">* ${errors.verifycode}</font><br/>
     <input type="submit" value="注册"/>
+
 </form>
 </body>
 </html>
