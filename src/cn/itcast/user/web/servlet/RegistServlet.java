@@ -25,6 +25,8 @@ public class RegistServlet extends HttpServlet {
         * 1.封装表单数据（封装到User对象中）
         * */
         User form = CommonUtils.toBean(request.getParameterMap(),User.class);
+        System.out.println("****用户信息****");
+        System.out.println(form);
         /**
          * 添加新任务（表单校验）；
          * 1.创建一个Map，用来装载所有的表单错误信息
@@ -47,6 +49,19 @@ public class RegistServlet extends HttpServlet {
             map.put("password","密码不能为空！");
         }else if(password.length() < 3 || password.length()>15){
             map.put("password","密码长度必须在3~15之间！");
+        }
+        //校验年龄
+        String age = form.getAge();
+        int ageNum = Integer.parseInt(age);
+        if(age == null || age.trim().isEmpty()){//去除空格
+            map.put("age","年龄不能为空！");
+        }else if(ageNum>200 || ageNum<0){
+            map.put("age","年龄不真实！");
+        }
+        //校验性别
+        String gender = form.getGender();
+        if(gender == null || gender.trim().isEmpty()){//去除空格
+            map.put("gender","性别不能为空！");
         }
         //校验验证码
         String verifycode = form.getVerifycode();

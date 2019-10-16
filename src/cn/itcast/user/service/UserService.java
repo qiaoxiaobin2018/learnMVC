@@ -1,13 +1,18 @@
 package cn.itcast.user.service;
 
+import cn.itcast.user.dao.DaoFactory;
 import cn.itcast.user.dao.UserDao;
+import cn.itcast.user.dao.UserDaoImpl;
 import cn.itcast.user.domain.User;
 
 /**
  * User的业务逻辑层
  * */
 public class UserService {
-    private UserDao userDao = new UserDao();
+    /*
+    * 把具体的实现类的创建，隐藏到工厂中去
+    * */
+    private UserDao userDao = DaoFactory.getUserDao();
 
     /**
      * 注册功能

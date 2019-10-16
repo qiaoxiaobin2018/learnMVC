@@ -32,6 +32,9 @@
     <%--requestScope.user.username--%>
     账 号：<input type="text" name="username" value="${param.username}"/><font color="#ff7f50">* ${errors.username}</font> <br/>
     密 码：<input type="password" name="password" value="${param.password}"><font color="#ff7f50">* ${errors.password}</font><br/>
+    年 龄：<input type="text" name="age" value="${param.age}"><font color="#ff7f50">* ${errors.age}</font><br/>
+    性 别：<input type="radio" name="gender" value="男">男
+        <input type="radio" name="gender" value="女">女<font color="#ff7f50">* ${errors.gender}</font><br/>
     验 证：<input type="text" name="verifycode" value="" size="3"/>
         <img id="image1" src="<c:url value="/verifycodeServlet"/>" border="2"/>
         <a href="javascript:_change()">换一张</a><font color="#ff7f50">* ${errors.verifycode}</font><br/>

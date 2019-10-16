@@ -24,6 +24,7 @@
     账 号：<input type="text" name="username" value="${param.username}"/><br/>
     密 码：<input type="password" name="password" value="${param.password}"><br/>
     <input type="submit" value="登录"/>
+    <a href="<c:url value="/user/regist.jsp"/> ">去注册</a>
 </form>
 </body>
 </html>

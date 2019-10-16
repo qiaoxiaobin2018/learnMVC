@@ -1,4 +1,4 @@
-import cn.itcast.user.dao.UserDao;
+import cn.itcast.user.dao.UserDaoImpl;
 import cn.itcast.user.domain.User;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class UserDaoTest {
     @Test
     public void testFindByUsername(){
-        UserDao userDao = new UserDao();
+        UserDaoImpl userDao = new UserDaoImpl();
         User user = userDao.findByUserName("乔晓斌");
         System.out.println(user);
 
@@ -16,7 +16,7 @@ public class UserDaoTest {
 
     @Test
     public void testAddUser(){
-        UserDao userDao = new UserDao();
+        UserDaoImpl userDao = new UserDaoImpl();
         User user = new User();
         user.setUsername("乔晓斌");
         user.setPassword("1q2w3e4r");

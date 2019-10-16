@@ -21,6 +21,7 @@
           <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/commons-logging-1.1.1.jar" />
           <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/itcast-tools-1.4.jar" />
           <element id="file-copy" path="D:/jar file/CommonUtils工具类的jar（有效）/commons-beanutils-1.8.3.jar" />
+          <element id="file-copy" path="D:/jar file/mysql-connector-java-8.0.11.jar" />
         </element>
       </element>
     </root>
